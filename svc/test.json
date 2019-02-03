@@ -1,0 +1,40 @@
+[
+  {
+    "type": "start",
+    "id": 1,
+    "nextCompId": [2],
+    "params": {},
+    "name": "Старт 1"
+  },
+  {
+    "type": "assignment",
+    "id": 2,
+    "nextCompId": [3],
+    "params": {
+      "fisrtArg": "url",
+      "secondArg": "https://example.com"
+    },
+    "name": "Присвоение 1"
+  },
+  {
+    "type": "compareMenu",
+    "id": 3,
+    "params": {
+      "fisrtArg": "url"
+    },
+    "nextCompId": [
+      {
+        "secondArg": "http:",
+        "nextId": 4
+      },
+      {
+        "secondArg": "https:",
+        "nextId": 5
+      },
+      {
+        "default": 6
+      }
+    ],
+    "name": "Меню сравнения 1"
+  }
+]
